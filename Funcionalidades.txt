@@ -1,0 +1,33 @@
+Funcionalidades
+Registrar dueño
+Iniciar sesión para el dueño
+(¿Valdrá la pena poner olvidar contraseña?)
+Crear horario de barbería
+Editar horario de barbería
+Desactivar horario de barbería
+Ver horarios de barbería disponibles
+Ver horarios antiguos de barbería
+Crear servicio
+Editar servicio
+Desactivar servicio
+Ver servicios disponibles
+Crear reglas de multas
+Editar reglas de multa
+Ver reglas de multas
+
+Registrar cliente
+Editar información del cliente
+
+Registrar barbero
+Iniciar sesión barbero
+Crear horario de trabajo
+Editar horario de trabajo
+Desactivar horario de trabajo
+Ver horarios de trabajo
+Ver agenda 
+Agendar cita
+Desagendar cita
+Reagendar cita
+
+
+
