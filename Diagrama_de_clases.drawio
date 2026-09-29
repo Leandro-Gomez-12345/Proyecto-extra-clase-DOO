@@ -1,0 +1,349 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36">
+  <diagram name="Página-1" id="NBcZ4_gZ1I0S5rxR_4YT">
+    <mxGraphModel dx="4482" dy="2867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HoJYFXgDYpDd157awaiK-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="DiaSemana" vertex="1">
+          <mxGeometry height="108" width="260" x="960" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-2" parent="HoJYFXgDYpDd157awaiK-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- nombre: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="46" width="260" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-3" parent="HoJYFXgDYpDd157awaiK-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-4" parent="HoJYFXgDYpDd157awaiK-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ verDiasDeLaSemana(): List&amp;lt;DiaSemana&amp;gt;" vertex="1">
+          <mxGeometry height="28" width="260" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-88" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;endSize=10;" target="HoJYFXgDYpDd157awaiK-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Barbero" vertex="1">
+          <mxGeometry height="342" width="380" x="-250" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-6" parent="HoJYFXgDYpDd157awaiK-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- primerNombre: String&lt;/div&gt;&lt;div&gt;- segundoNombre: String&lt;/div&gt;&lt;div&gt;- primerApellido: String&lt;/div&gt;&lt;div&gt;- segundoApellido: String&lt;/div&gt;&lt;div&gt;- prefijo: PrefijoCelular&lt;/div&gt;&lt;div&gt;- celular: String&lt;/div&gt;&lt;div&gt;- elNumeroCelularEsCorrecto: boolean&lt;/div&gt;&lt;div&gt;- vigente: boolean&lt;/div&gt;&lt;div&gt;- sedeDeTrabajo: Sede&lt;/div&gt;" vertex="1">
+          <mxGeometry height="154" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-7" parent="HoJYFXgDYpDd157awaiK-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-8" parent="HoJYFXgDYpDd157awaiK-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ registrarBarbero(primerNombre, segundoNombre, primerApellido, segundoApellido, prefijoCelular, celular, elNumeroCelularEsCorrecto, sedeDeTrabajo): Barbero&lt;div&gt;+ editarContactoBarbero(id, prefijoCelular, celular): Barbero&lt;/div&gt;&lt;div&gt;+ consultarDatosBarbero(id): Barbero&lt;/div&gt;&lt;div&gt;+ desactivarBarbero(id): void&lt;/div&gt;&lt;div&gt;+ reactivarBarbero(id): void&lt;/div&gt;&lt;div&gt;+ cambiarSedeDeTrabajoBarbero(id, sedeDeTrabajo): Barbero&lt;/div&gt;&lt;div&gt;+ consultarServiciosSedeBarbero(id): List&amp;lt;Servicio&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="154" width="380" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-13" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="PrefijoCelular" vertex="1">
+          <mxGeometry height="108" width="380" x="-250" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-14" parent="HoJYFXgDYpDd157awaiK-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- prefijo: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="46" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-15" parent="HoJYFXgDYpDd157awaiK-13" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-16" parent="HoJYFXgDYpDd157awaiK-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ consultarPrefijosCelular(): List&amp;lt;PrefijoCelular&amp;gt;" vertex="1">
+          <mxGeometry height="28" width="380" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="94-IM5NY3CTafTyAfnSr-1" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=diamond;endFill=1;endSize=10;" target="HoJYFXgDYpDd157awaiK-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-21" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="BarberoServicio" vertex="1">
+          <mxGeometry height="278" width="380" x="-250" y="-545" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-22" parent="HoJYFXgDYpDd157awaiK-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- barbero: Barbero&lt;/div&gt;&lt;div&gt;- servicio: Servicio&lt;/div&gt;&lt;div&gt;- duracionEnHoras: int&lt;/div&gt;&lt;div&gt;- duracionEnMinutos: int&lt;/div&gt;&lt;div&gt;- tiempoExtra: int&lt;/div&gt;&lt;div&gt;- vigente: boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="118" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-23" parent="HoJYFXgDYpDd157awaiK-21" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-24" parent="HoJYFXgDYpDd157awaiK-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ habilitarServicioBarbero(barbero, servicio, duracionEnHoras, duracionEnMinutos, tiempoExtra): BarberoServicio&lt;div&gt;+ ajustarTiemposServicioBarbero(id, duracionEnHoras, duracionEnMinutos, tiempoExtra): BarberoServicio&lt;/div&gt;&lt;div&gt;+ consultarServiciosElegidos(barbero): List&amp;lt;BarberoServicio&amp;gt;&lt;/div&gt;&lt;div&gt;+ consultarServiciosDeBarbero(barbero): List&amp;lt;BarberoServicio&amp;gt;&lt;/div&gt;&lt;div&gt;+ desactivarServicioBarbero(id): void&lt;/div&gt;&lt;div&gt;+ reactivarServicioBarbero(id): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="126" width="380" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-8" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;endSize=10;" target="_wWBkaraGS194lsKLugh-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-25" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Servicio" vertex="1">
+          <mxGeometry height="282" width="380" x="-750" y="-260" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-26" parent="HoJYFXgDYpDd157awaiK-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- sedeDeLaBarberia: Sede&lt;/div&gt;&lt;div&gt;- nombre: String&lt;/div&gt;&lt;div&gt;- descripcion: String&lt;/div&gt;&lt;div&gt;- precio: int&lt;/div&gt;&lt;div&gt;- disponible: boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-27" parent="HoJYFXgDYpDd157awaiK-25" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-28" parent="HoJYFXgDYpDd157awaiK-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ofrecerServicioNuevo(sedeDeLaBarberia, nombre, descripcion, precio): Servicio&lt;div&gt;+ editarServicio(id, sedeDeLaBarberia, nombre, descripcion, precio): Servicio&lt;/div&gt;&lt;div&gt;+ consultarServiciosDisponibles(sedeDeLaBarberia): List&amp;lt;Servicio&amp;gt;&lt;/div&gt;&lt;div&gt;+ retirarServicio(id): void&lt;/div&gt;&lt;div&gt;+ reactivarServicio(id): void&lt;/div&gt;&lt;div&gt;+ consultarServiciosNoDisponibles(sedeDeLaBarberia): List&amp;lt;Servicio&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="148" width="380" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-31" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="HorarioBarbero" vertex="1">
+          <mxGeometry height="270" width="380" x="430" y="-210" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-32" parent="HoJYFXgDYpDd157awaiK-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- barbero: Barbero&lt;/div&gt;&lt;div&gt;- horarioDeLaBarberia: HorarioBarberia&lt;/div&gt;&lt;div&gt;- horaInicio: LocalTime&lt;/div&gt;&lt;div&gt;- horaFinal: LocalTime&lt;/div&gt;&lt;div&gt;- fechaCreacion: LocalDate&lt;/div&gt;&lt;div&gt;- fechaDesactivacion: LocalDate&lt;/div&gt;&lt;div&gt;- vigente: boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="136" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-33" parent="HoJYFXgDYpDd157awaiK-31" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-34" parent="HoJYFXgDYpDd157awaiK-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ definirHorarioDeTrabajo(barbero, horarioDeLaBarberia, horaInicio, horaFinal): HorarioBarbero&lt;div&gt;+ consultarHorariosDefinidos(barbero): List&amp;lt;HorarioBarbero&amp;gt;&lt;/div&gt;&lt;div&gt;+ desactivarHorarioDeTrabajo(id): void&lt;/div&gt;&lt;div&gt;+ consultarHorariosDeTrabajoDeBarbero(barbero): List&amp;lt;HorarioBarbero&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="380" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-36" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Agenda" vertex="1">
+          <mxGeometry height="170" width="380" x="970" y="-61" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-37" parent="HoJYFXgDYpDd157awaiK-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- horarioDelBarbero: HorarioBarbero&lt;/div&gt;&lt;div&gt;- fecha: LocalDate&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-38" parent="HoJYFXgDYpDd157awaiK-36" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-39" parent="HoJYFXgDYpDd157awaiK-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ crearAgendaBarbero(horarioDelBarbero, fecha): Agenda&lt;div&gt;+ consultarDisponibilidadBarbero(barbero, fecha): List&amp;lt;LocalTime&amp;gt;&lt;/div&gt;&lt;div&gt;+ consultarCitasDeAgenda(barbero, fecha): List&amp;lt;Cita&amp;gt;&lt;/div&gt;&lt;div&gt;+ consultarCitasPorBarberoYRango(barbero, fechaHoraInicio, fechaHoraFinal): List&amp;lt;Cita&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="380" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-66" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;endSize=10;" target="HoJYFXgDYpDd157awaiK-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L2qznYcnWZCp62BkI6FR-4" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endArrow=diamond;endFill=1;endSize=10;" target="HoJYFXgDYpDd157awaiK-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-41" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Cita" vertex="1">
+          <mxGeometry height="290" width="380" x="1480" y="-440" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-42" parent="HoJYFXgDYpDd157awaiK-41" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- cliente: Cliente&lt;/div&gt;&lt;div&gt;- agenda: Agenda&lt;/div&gt;&lt;div&gt;- estado: Estado&lt;/div&gt;&lt;div&gt;- horaInicio: LocalTime&lt;/div&gt;&lt;div&gt;- horaFinEstimada: LocalTime&lt;/div&gt;&lt;div&gt;- porcentajeDescuento: int&lt;/div&gt;&lt;div&gt;- multa: int&lt;/div&gt;&lt;div&gt;- tiempoEspera: int&lt;/div&gt;&lt;div&gt;- precioTotal: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="162" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-43" parent="HoJYFXgDYpDd157awaiK-41" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-44" parent="HoJYFXgDYpDd157awaiK-41" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ pedirCita(cliente, agenda, horaInicio, servicios): Cita&lt;div&gt;+ reprogramarCita(id, agenda, horaInicio): Cita&lt;/div&gt;&lt;div&gt;+ cancelarCitaPorCliente(id): Cita&lt;/div&gt;&lt;div&gt;+ cancelarCitaPorBarbero(id): Cita&lt;/div&gt;&lt;div&gt;+ registrarInasistenciaCliente(id): Cita&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="380" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-55" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;endSize=10;" target="HoJYFXgDYpDd157awaiK-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-50" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="HorarioBarberia" vertex="1">
+          <mxGeometry height="227" width="380" x="447" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-51" parent="HoJYFXgDYpDd157awaiK-50" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- sedeDeLaBarberia: Sede&lt;/div&gt;&lt;div&gt;- diaDeLaSemana: DiaSemana&lt;/div&gt;&lt;div&gt;- horaApertura: LocalTime&lt;/div&gt;&lt;div&gt;- horaCierre: LocalTime&lt;/div&gt;&lt;div&gt;- fechaCreacion: LocalDate&lt;/div&gt;&lt;div&gt;- fechaDesactivacion: LocalDate&lt;/div&gt;&lt;div&gt;- vigente: boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="126" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-52" parent="HoJYFXgDYpDd157awaiK-50" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-53" parent="HoJYFXgDYpDd157awaiK-50" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ definirHorarioBarberia(sedeDeLaBarberia, diaDeLaSemana, horaApertura, horaCierre): HorarioBarberia&lt;div&gt;+ consultarHorariosBarberia(): List&amp;lt;HorarioBarberia&amp;gt;&lt;/div&gt;&lt;div&gt;+ desactivarHorarioBarberia(id): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="67" width="380" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-61" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;endSize=10;" target="HoJYFXgDYpDd157awaiK-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-56" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CitaServicio" vertex="1">
+          <mxGeometry height="270" width="380" x="870" y="-500" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-57" parent="HoJYFXgDYpDd157awaiK-56" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- cita: Cita&lt;/div&gt;&lt;div&gt;- barberoServicio: BarberoServicio&lt;/div&gt;&lt;div&gt;- precioServicio: int&lt;/div&gt;&lt;div&gt;- duracionEnHorasElServicio: int&lt;/div&gt;&lt;div&gt;- duracionEnMinutosElServicio: int&lt;/div&gt;&lt;div&gt;- tiempoExtra: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="136" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-58" parent="HoJYFXgDYpDd157awaiK-56" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-59" parent="HoJYFXgDYpDd157awaiK-56" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ consultarServiciosDeCita(cita): List&amp;lt;CitaServicio&amp;gt;&lt;div&gt;+ consultarPrecioDeCadaServicio(cita): List&amp;lt;CitaServicio&amp;gt;&lt;/div&gt;&lt;div&gt;+ crearCitaServicio(cita, barberoServicio): CitaServicio&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="380" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-62" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Estado" vertex="1">
+          <mxGeometry height="162" width="260" x="2015" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-63" parent="HoJYFXgDYpDd157awaiK-62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- nombre: String&lt;/div&gt;&lt;div&gt;- descripcion: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="64" width="260" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-64" parent="HoJYFXgDYpDd157awaiK-62" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-65" parent="HoJYFXgDYpDd157awaiK-62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ consultarTodosLosEstados(): List&amp;lt;Estado&amp;gt;&lt;div&gt;+ editarDescripcion(id, descripcion): void&lt;/div&gt;&lt;div&gt;+ consultarDescripcion(nombre): String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="64" width="260" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-67" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Multa" vertex="1">
+          <mxGeometry height="234" width="280" x="2005" y="-350" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-68" parent="HoJYFXgDYpDd157awaiK-67" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- cita: Cita&lt;/div&gt;&lt;div&gt;- tipo: TipoMulta&lt;/div&gt;&lt;div&gt;- monto: int&lt;/div&gt;&lt;div&gt;- horaGeneracion: LocalTime&lt;/div&gt;&lt;div&gt;- fechaHoraPago: LocalDateTime&lt;/div&gt;&lt;div&gt;- pagada: boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="136" width="280" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-69" parent="HoJYFXgDYpDd157awaiK-67" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="280" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-70" parent="HoJYFXgDYpDd157awaiK-67" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ imponerMultaCliente(cita, tipo): Multa&lt;div&gt;+ consultarMultasDeCliente(cliente): List&amp;lt;Multa&amp;gt;&lt;/div&gt;&lt;div&gt;+ registrarPagoMulta(id, fechaHoraPago): Multa&lt;/div&gt;" vertex="1">
+          <mxGeometry height="64" width="280" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-72" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="TipoMulta" vertex="1">
+          <mxGeometry height="126" width="290" x="2450" y="-320" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-73" parent="HoJYFXgDYpDd157awaiK-72" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- nombre: String&lt;/div&gt;&lt;div&gt;- descripcion: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="64" width="290" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-74" parent="HoJYFXgDYpDd157awaiK-72" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="290" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-75" parent="HoJYFXgDYpDd157awaiK-72" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ consultarTodosLosTiposMulta(): List&amp;lt;TipoMulta&amp;gt;" vertex="1">
+          <mxGeometry height="28" width="290" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-77" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Bloqueo" vertex="1">
+          <mxGeometry height="224" width="380" x="400" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-78" parent="HoJYFXgDYpDd157awaiK-77" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- barbero: Barbero&lt;/div&gt;&lt;div&gt;- fechaHoraInicio: LocalDateTime&lt;/div&gt;&lt;div&gt;- fechaHoraFinal: LocalDateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-79" parent="HoJYFXgDYpDd157awaiK-77" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-80" parent="HoJYFXgDYpDd157awaiK-77" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ definirBloqueo(barbero, fechaHoraInicio, fechaHoraFinal): Bloqueo&lt;div&gt;+ eliminarBloqueo(id): void&lt;/div&gt;&lt;div&gt;+ consultarBloqueosPorFecha(barbero, fecha): List&amp;lt;Bloqueo&amp;gt;&lt;/div&gt;&lt;div&gt;+ consultarBloqueoPorFechaHora(barbero, fechaHoraInicio): Bloqueo&lt;/div&gt;&lt;div&gt;+ editarBloqueo(id, fechaHoraInicio, fechaHoraFinal): Bloqueo&lt;/div&gt;" vertex="1">
+          <mxGeometry height="108" width="380" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="L2qznYcnWZCp62BkI6FR-1" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endSize=10;" target="HoJYFXgDYpDd157awaiK-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1680" y="934" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-82" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Cliente" vertex="1">
+          <mxGeometry height="314" width="380" x="1480" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-83" parent="HoJYFXgDYpDd157awaiK-82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- primerNombre: String&lt;/div&gt;&lt;div&gt;- segundoNombre: String&lt;/div&gt;&lt;div&gt;- primerApellido: String&lt;/div&gt;&lt;div&gt;- segundoApellido: String&lt;/div&gt;&lt;div&gt;- prefijoCelular: PrefijoCelular&lt;/div&gt;&lt;div&gt;- celular: String&lt;/div&gt;&lt;div&gt;- elNumeroCelularEsCorrecto: boolean&lt;/div&gt;&lt;div&gt;- estaVetado: boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="144" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-84" parent="HoJYFXgDYpDd157awaiK-82" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-85" parent="HoJYFXgDYpDd157awaiK-82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ registrarCliente(primerNombre, segundoNombre, primerApellido, segundoApellido, prefijoCelular, celular): Cliente&lt;div&gt;+ editarContactoCliente(id, prefijoCelular, celular): Cliente&lt;/div&gt;&lt;div&gt;+ consultarDatosCliente(id): Cliente&lt;/div&gt;&lt;div&gt;+ consultarEstadoVetoCliente(id): boolean&lt;/div&gt;&lt;div&gt;+ consultarCantidadMultasSinPagar(id): int&lt;/div&gt;&lt;div&gt;+ vetarCliente(id): void&lt;/div&gt;&lt;div&gt;+ quitarVetoCliente(id): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="136" width="380" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-1" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.002;entryY=0.24;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamond;endFill=1;endSize=10;" target="HoJYFXgDYpDd157awaiK-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-7" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endSize=10;" target="_wWBkaraGS194lsKLugh-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-559.94" y="542" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-14" edge="1" parent="1" source="_wWBkaraGS194lsKLugh-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;endArrow=diamond;endFill=1;endSize=10;" target="_wWBkaraGS194lsKLugh-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-2" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Sede" vertex="1">
+          <mxGeometry height="198" width="330" x="-725" y="224" as="geometry">
+            <mxRectangle height="30" width="70" x="-725" y="224" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-3" parent="_wWBkaraGS194lsKLugh-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- ciudad: Ciudad&lt;/div&gt;&lt;div&gt;- barberia: Barberia&lt;/div&gt;&lt;div&gt;- nombre: String&lt;/div&gt;&lt;div&gt;- direccion: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="330" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-4" parent="_wWBkaraGS194lsKLugh-2" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="330" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-5" parent="_wWBkaraGS194lsKLugh-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ registrarSede(barberia, ciudad, nombre, direccion): Sede&lt;div&gt;+ consultarDatosSede(id): Sede&lt;/div&gt;&lt;div&gt;+ cambiarNombreSede(id, nombre): Sede&lt;/div&gt;&lt;div&gt;+ cambiarDireccionSede(id, direccion): Sede&lt;/div&gt;&lt;div&gt;+ darDeBajaSede(id): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="330" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Barberia" vertex="1">
+          <mxGeometry height="170" width="290" x="-1180" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-11" parent="_wWBkaraGS194lsKLugh-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- nombre: String&lt;/div&gt;&lt;div&gt;- nit: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54" width="290" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-12" parent="_wWBkaraGS194lsKLugh-10" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="290" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-13" parent="_wWBkaraGS194lsKLugh-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ registrarBarberia(nombre, nit): Barberia&lt;div&gt;+ consultarDatosBarberia(id): Barberia&lt;/div&gt;&lt;div&gt;+ consultarNombreBarberia(id): String&lt;/div&gt;&lt;div&gt;+ cambiarNombreBarberia(id, nombre): Barberia&lt;/div&gt;&lt;div&gt;+ darDeBajaBarberia(id): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="290" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-19" edge="1" parent="1" source="_wWBkaraGS194lsKLugh-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endSize=10;" target="_wWBkaraGS194lsKLugh-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-15" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Ciudad" vertex="1">
+          <mxGeometry height="126" width="220" x="-1145" y="261" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-16" parent="_wWBkaraGS194lsKLugh-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- nombre: String&lt;/div&gt;&lt;div&gt;- departamento: Departamento&lt;/div&gt;" vertex="1">
+          <mxGeometry height="64" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-17" parent="_wWBkaraGS194lsKLugh-15" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-18" parent="_wWBkaraGS194lsKLugh-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ consultarCiudades(): List&amp;lt;Ciudad&amp;gt;" vertex="1">
+          <mxGeometry height="28" width="220" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-24" edge="1" parent="1" source="_wWBkaraGS194lsKLugh-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endSize=10;" target="_wWBkaraGS194lsKLugh-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-20" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Departamento" vertex="1">
+          <mxGeometry height="126" width="180" x="-1125" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-21" parent="_wWBkaraGS194lsKLugh-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- nombre: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="46" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-22" parent="_wWBkaraGS194lsKLugh-20" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-23" parent="_wWBkaraGS194lsKLugh-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ consultarDepartamentos(): List&amp;lt;Departamento&amp;gt;" vertex="1">
+          <mxGeometry height="46" width="180" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-34" edge="1" parent="1" source="_wWBkaraGS194lsKLugh-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=diamond;endFill=1;endSize=10;" target="HoJYFXgDYpDd157awaiK-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-35" edge="1" parent="1" source="_wWBkaraGS194lsKLugh-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;endSize=10;" target="_wWBkaraGS194lsKLugh-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-25" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="RegistroHoraCita" vertex="1">
+          <mxGeometry height="222" width="380" x="1480" y="-780" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-26" parent="_wWBkaraGS194lsKLugh-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- cita: Cita&lt;/div&gt;&lt;div&gt;- tipoRegistroHora: TipoRegistroHora&lt;/div&gt;&lt;div&gt;- hora: LocalTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="74" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-27" parent="_wWBkaraGS194lsKLugh-25" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-28" parent="_wWBkaraGS194lsKLugh-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ definirRegistroHoraCita(cita, tipoRegistroHora, hora): RegistroHoraCita&lt;div&gt;+ cambiarHoraRegistroHoraCita(id, hora): RegistroHoraCita&lt;/div&gt;&lt;div&gt;+ consultarHoraLlegadaCliente(cita): LocalTime&lt;/div&gt;&lt;div&gt;+ consultarHoraBarberoPreparado(cita): LocalTime&lt;/div&gt;&lt;div&gt;+ consultarHoraInicioAtencion(cita): LocalTime&lt;/div&gt;&lt;div&gt;+ consultarHoraFinAtencion(cita): LocalTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="114" width="380" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-29" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="TipoRegistroHora" vertex="1">
+          <mxGeometry height="108" width="380" x="1990" y="-723" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-30" parent="_wWBkaraGS194lsKLugh-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: UUID&lt;div&gt;- nombre: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="46" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-31" parent="_wWBkaraGS194lsKLugh-29" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-32" parent="_wWBkaraGS194lsKLugh-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ consultarTiposRegistroHora(): List&amp;lt;TipoRegistroHora&amp;gt;" vertex="1">
+          <mxGeometry height="28" width="380" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="94-IM5NY3CTafTyAfnSr-2" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;endSize=10;" target="HoJYFXgDYpDd157awaiK-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_wWBkaraGS194lsKLugh-6" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endSize=10;" target="_wWBkaraGS194lsKLugh-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="94-IM5NY3CTafTyAfnSr-3" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;endSize=10;exitX=0.545;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;" target="HoJYFXgDYpDd157awaiK-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-35" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endSize=10;" target="HoJYFXgDYpDd157awaiK-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="-211" />
+              <mxPoint x="350" y="453" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L2qznYcnWZCp62BkI6FR-2" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;endArrow=diamond;endFill=1;endSize=10;" target="HoJYFXgDYpDd157awaiK-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L2qznYcnWZCp62BkI6FR-3" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=diamond;endFill=1;endSize=10;" target="HoJYFXgDYpDd157awaiK-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L2qznYcnWZCp62BkI6FR-5" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=10;" target="HoJYFXgDYpDd157awaiK-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="94-IM5NY3CTafTyAfnSr-6" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;entryX=1.005;entryY=0.978;entryDx=0;entryDy=0;entryPerimeter=0;endSize=10;" target="HoJYFXgDYpDd157awaiK-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HoJYFXgDYpDd157awaiK-60" edge="1" parent="1" source="HoJYFXgDYpDd157awaiK-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endSize=10;" target="HoJYFXgDYpDd157awaiK-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
